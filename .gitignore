@@ -1,1 +1,118 @@
+# Python virtual environments
 .venv/
+venv/
+env/
+ENV/
+
+# Python bytecode and tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyright/
+.pyre/
+.hypothesis/
+.tox/
+.nox/
+
+# Python packaging and build output
+/build/
+/dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Test coverage and generated reports
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+/test-results/
+
+# Local environment variables and credentials
+.env
+.env.*
+!.env.example
+!.env.*.example
+!.env.template
+/.aws/
+/secrets/
+/credentials/
+
+# Local data and runtime output
+# Keep small, version-controlled samples in tests/fixtures/.
+/data/
+/logs/
+*.log
+*.log.*
+/tmp/
+/temp/
+*.pid
+*.pid.lock
+
+# Local database files (fixtures elsewhere remain trackable)
+/*.db
+/*.sqlite
+/*.sqlite3
+
+# Airflow runtime files; keep DAG source code
+/orchestration/airflow/logs/
+/orchestration/airflow/airflow.cfg
+/orchestration/airflow/airflow.db
+/orchestration/airflow/airflow.db-*
+/orchestration/airflow/airflow-webserver.pid
+/airflow.cfg
+/airflow.db
+/airflow.db-*
+
+# Spark runtime output
+/spark-warehouse/
+/metastore_db/
+/derby.log
+/pipelines/spark-warehouse/
+/pipelines/metastore_db/
+
+# Terraform provider cache, state, plans, and local overrides
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+/infra/terraform/**/crash.log
+/infra/terraform/**/crash.*.log
+/infra/terraform/**/override.tf
+/infra/terraform/**/override.tf.json
+/infra/terraform/**/*_override.tf
+/infra/terraform/**/*_override.tf.json
+*.tfvars
+*.tfvars.json
+# Example variable files and provider lock files should be committed.
+!*.tfvars.example
+!*.tfvars.json.example
+!.terraform.lock.hcl
+
+# Machine-specific Compose overrides
+/compose.override.yaml
+/compose.override.yml
+/docker-compose.override.yaml
+/docker-compose.override.yml
+
+# Editor and notebook temporary files
+.idea/
+.history/
+*.swp
+*.swo
+*~
+.ipynb_checkpoints/
+# Shared .vscode settings and notebooks remain trackable.
+
+# Windows and macOS metadata
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+._*
+
+# Keep dependency lock files, migrations, Dockerfiles, base Compose
+# files, Terraform source, tests, and fixture datasets under version control.
